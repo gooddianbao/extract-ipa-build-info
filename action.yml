@@ -1,0 +1,23 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  baseUrl:
+    description: 'IPA info backend URL'
+    required: true
+    default: 'https://foo.com/'
+  bearerToken:
+    description: 'IPA info backend URL Bearer token'
+    required: true
+    default: 'token'
+  appName:
+    description: 'app name'
+    required: true
+    default: 'appName'
+  appVVersion:
+    description: 'app v version'
+    required: true
+    default: 'v1.0.0'
+    
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
